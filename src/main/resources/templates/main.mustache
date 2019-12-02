@@ -1,5 +1,12 @@
 <html>
 <body>
-<div>"{{some}}"</div>
+<div>"Users List"</div>
+{{#users}}
+    <div>
+        <b>{{id}}</b>
+        <span>{{name}}</span>
+        <i>{{password}}</i>
+    </div>
+{{/users}}
 </body>
 </html>
