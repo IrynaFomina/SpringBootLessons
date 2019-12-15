@@ -1,8 +1,13 @@
-<html>
+<html lang="en-us">
 <body>
+<form action="/logout" method="post">
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+    <input type="submit" value="Sign Out"/>
+</form>
 <form method="post">
-    <input type="text" name="name" placeholder="Введите имя" />
+    <input type="text" name="username" placeholder="Введите имя" />
     <input type="text" name="password" placeholder="пароль">
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
     <button type="submit">Добавить</button>
 </form>
 </body>

@@ -1,10 +1,16 @@
-<html>
+<html lang="en-us">
 <body>
+<div>
+    <form action="/logout" method="post">
+        <!--input type="hidden" name="_csrf" value="{{_csrf.token}}" /-->
+        <input type="submit" value="Sign Out"/>
+    </form>
+</div>
 <div>"Users List"</div>
 {{#users}}
     <div>
         <b>{{id}}</b>
-        <span>{{name}}</span>
+        <span>{{username}}</span>
         <i>{{password}}</i>
     </div>
 {{/users}}
